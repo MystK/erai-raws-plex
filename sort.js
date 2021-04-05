@@ -27,7 +27,11 @@ module.exports = async (episodeFile) => {
     const episodes = _.filter(filesDownloaded, ep => {
       const match = ep.match(new RegExp(config.animeRegex));
       if (!_.isNull(match)) {
-        animeFoldersObj[match[2]] = true;
+        let animeFolderName = match[2];
+        if (animeFolderName.split("").reverse()[0] === ".") {
+          animeFolderName = animeFolderName.slice(0, -1);
+        }
+        animeFoldersObj[animeFolderName] = true;
       }
       return match;
     });
