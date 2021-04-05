@@ -5,8 +5,8 @@
   "bin": "index.js",
   "scripts": {
     "build": "pkg . --out-path dist",
-    "start-nodemon": "nodemon index.js",
-    "start": "node index.js"
+    "start-nodemon": "nodemon index.js -- --sort",
+    "start": "node index.js -- --sort"
   },
   "author": "Antoine P <MystK@users.noreply.github.com>",
   "license": "MIT",
