@@ -1,0 +1,8 @@
+{
+  "downloadsDirectory": "D:\\Downloads\\Torrents",
+  "plexAnimeDirectory": "D:\\Media\\Anime",
+  "animeRegex": "^\\[(Erai-raws|SubsPlease)\\] (.+) - \\d{2}(v\\d)? .*1080p.*\\.mkv$",
+  "episodeNumberRegex": ".+(\\d{2}).+1080p.+",
+  "moveRetryCount": 1000,
+  "moveRetryIntervalMs": 100
+}
